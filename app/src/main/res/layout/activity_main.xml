@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#607D8B"
+    android:orientation="vertical"
+    tools:context="com.example.ahmedmagdy.countdown.MainActivity">
+
+
+    <Button
+        android:id="@+id/maleID"
+        android:layout_width="92dp"
+        android:layout_height="104dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/kindpng_39076"
+        android:onClick="maleSelected"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/desDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maleID"
+        android:layout_marginLeft="20dp"
+        android:text="Male"
+        android:textColor="#212121"
+
+        android:textSize="35sp"
+
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/femaleID"
+        android:layout_width="102dp"
+        android:layout_height="96dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/kindpng_250068"
+        android:onClick="femaleSelected"
+        android:scaleType="centerCrop" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/femaleID"
+        android:layout_marginRight="16dp"
+        android:text="Female"
+        android:textColor="#212121"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+
+        android:id="@+id/heightt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/femaleID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Height"
+        android:textColor="#212121"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/heightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heightt"
+
+        android:layout_centerHorizontal="true"
+        android:text="160cm"
+        android:textColor="#212121"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekBarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/heightTextView"
+        android:layout_margin="16dp"
+        android:background="#ffffff"
+        android:max="210"
+        android:min="100"
+        android:progress="1"
+
+        />
+
+
+    <TextView
+
+        android:id="@+id/weightt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/WeightTextView"
+        android:layout_marginLeft="16dp"
+        android:text="Weight"
+        android:textColor="#212121"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/WeightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/incrementWeightID"
+
+        android:layout_marginLeft="44dp"
+        android:text="60"
+        android:textColor="#212121"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/decrementWeightID"
+        android:layout_width="34dp"
+        android:layout_height="46dp"
+        android:layout_above="@id/BMRtTextView"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/incrementWeightID"
+        android:background="@drawable/round_remove_circle_outline_white_18dp"
+        android:onClick="decrementWeight"
+        android:scaleType="fitCenter" />
+
+    <Button
+
+        android:id="@+id/incrementWeightID"
+        android:layout_width="34dp"
+        android:layout_height="48dp"
+        android:layout_above="@id/BMRtTextView"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/round_add_circle_outline_white_18dp"
+        android:onClick="incrementWeight"
+        android:scaleType="fitCenter" />
+
+
+    <TextView
+
+        android:id="@+id/agee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/AgetTextView"
+        android:layout_marginRight="40dp"
+        android:text="Age"
+        android:textColor="#212121"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/AgetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/incrementAgeID"
+        android:layout_marginRight="45dp"
+        android:text="20"
+        android:textColor="#212121"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/decrementAgeID"
+        android:layout_width="34dp"
+        android:layout_height="46dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/BMRtTextView"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/round_remove_circle_outline_white_18dp"
+        android:onClick="decrementAge"
+
+        android:scaleType="fitCenter" />
+
+    <Button
+        android:id="@+id/incrementAgeID"
+        android:layout_width="34dp"
+        android:layout_height="48dp"
+        android:layout_above="@id/BMRtTextView"
+        android:layout_marginRight="40dp"
+        android:layout_toLeftOf="@id/decrementAgeID"
+        android:background="@drawable/round_add_circle_outline_white_18dp"
+        android:onClick="incrementAge"
+        android:scaleType="fitCenter" />
+
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:background="#CFD8DC"
+        android:onClick="calculateBMR"
+        android:text="Calculate"
+        android:textAllCaps="true" />
+    <TextView
+        android:id="@+id/BMRtTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMR = ......."
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_above="@id/calculate"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="#212121"/>
+</RelativeLayout>
+
+
